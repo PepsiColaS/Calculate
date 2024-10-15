@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+
+            <div class="left">
+                    <input type="text" id="input" oninput="checkEllement()">
+                <div>
+                    <button class="number" onclick="appendEllement(7)">7</button>
+                    <button class="number" onclick="appendEllement(8)">8</button>
+                    <button class="number" onclick="appendEllement(9)">9</button>
+                </div>
+                <div>
+                    <button class="number" onclick="appendEllement(4)">4</button>
+                    <button class="number" onclick="appendEllement(5)">5</button>
+                    <button class="number" onclick="appendEllement(6)">6</button>
+                </div>
+                <div>
+                    <button class="number" onclick="appendEllement(1)">1</button>
+                    <button class="number" onclick="appendEllement(2)">2</button>
+                    <button class="number" onclick="appendEllement(3)">3</button>
+                </div>
+                <div>
+                    <button class="number zero" onclick="appendEllement(0)">0</button>
+                    <button class="number" onclick="appendEllement('.')">.</button>
+                </div>
+                
+                <button class="number clear" onclick="clearDisplay()">C</button>
+
+            </div>
+
+            <div class="right">
+                <button class="increment" onclick="appendEllement('/')">÷</button>
+                <button class="increment" onclick="appendEllement('*')">×</button>
+                <button class="increment" onclick="appendEllement('-')">-</button>
+                <button class="increment" onclick="appendEllement('+')">+</button>
+                <button class="increment" onclick="appendEllement('=')">=</button>
+            </div>
+
+            <div class="history" id="history">
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
